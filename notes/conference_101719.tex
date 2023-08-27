@@ -38,21 +38,21 @@ This paper presents a literature review on Federated Learning (FL). \\
 
 \end{IEEEkeywords}
 
-\section{Notes}
-This section of the paper will contain the notes from each paper. Each paper will be detailed in turn.
+\section{Introduction}
+Federated learning is a relatively new topic in the field of artificial intelligence, and it is closely connected with the emerging field of embedded machine learning, also known as TinyML, or EmbeddedML. Embedded machine learning has become an essential part of the technology domain given the ubiquitous nature of embedded systems and the IoT, and the emerging potential to carry out machine learning tasks at the edge (i.e., in the IoT system or device itself), thereby shifting the implementation of models from high-end systems to low-end clients \cite{b1}.
 
-\subsection{Enabling and Leveraging AI in the Intelligent Edge:
-A Review of Current Trends and Future Directions}
+Federated learning (FL) is a topic that entails the training statistical models for remote devices or data centres. A good example of a remote device is a mobile phone - there are a wide range of mobile phone hardware configurations available and they cover a massive network. From this simple example, we can see that training remote devices in a FL setting means that the heterogeneous nature of the hardware as well as a potentially wide geographical area are just some of the challenges which must be overcome, and will require a radical change from the traditional approach to implementing machine learning models \cite{b2}.
 
-The first paper reviewed is on enabling and leveraging AI in the Intelligent Edge \cite{b1}. In the \textbf{Introduction}, the authors start by discussing why computational tasks and processes have been moved to fog networks, or to the network edge. They discuss discuss how this migration is a necessary step in the emergence of various "Smart" applications, and eventually smart cities. The idea is in these smart cities, AI would be deployed as when it was needed, and where it was needed. 
+It behoves us to consider, at the outset, some more challenges which will need to be overcome when considering a FL system. \textbf{Data privacy and data security} are always a paramount concern in any system. The architecture of a FL system means that the collected by the remote device will stay on that device, which reduces the risk of data breaches, however, the concerns of data privacy are not completely removed, and as such there is a need to implement schemes to further ensure any data is secure. Since FL involves frequent communication between the central server and the remote devices, another concern is \textbf{communication and bandwidth}. Communication overhead can be a substantial part of the battery life for a resource constrained device. So the need to optimise the communication protocols are is critical to the implementation of a useful FL network. As mentioned above, \textbf{heterogeneous hardware} will require the development of models that can allow for this heterogeneous nature is very important. Depending on the nature of the system, \textbf{data heterogeneity}, where different end devices are collecting different types of data will cause problems for 
 
 
-\section*{References}
+% \section*{References}
 
 \begin{thebibliography}{00}
-\bibitem{b1} T. Goethals, B. Volckaert and F. D. Turck, "Enabling and Leveraging AI in the Intelligent Edge: A Review of Current Trends and Future Directions," in IEEE Open Journal of the Communications Society, vol. 2, pp. 2311-2341, 2021, doi: 10.1109/OJCOMS.2021.3116437.
+\bibitem{b1} P. Pratim Ray, "A review on TinyML: State-of-the-art and prospects," in Journal of King Saud University –
+Computer and Information Sciences, vol. 34, pp. 1595-1623, 2022, doi: 10.1016/j.jksuci.2021.11.019.
 
-% \bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
+\bibitem{b2} T. Li, A. K. Sahu, A. Talwalkar and V. Smith, "Federated Learning: Challenges, Methods, and Future Directions," in IEEE Signal Processing Magazine, vol. 37, no. 3, pp. 50-60, May 2020, doi: 10.1109/MSP.2020.2975749.
 % \bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
 % \bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
 % \bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
