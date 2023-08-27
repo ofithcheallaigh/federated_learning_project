@@ -12,11 +12,7 @@
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Research Notes\\
-{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
-should not be used}
-\thanks{Identify applicable funding agency here. If none, delete this.}
-}
+\title{Federated Learning Literature Review}
 
 
 \author{
@@ -30,7 +26,8 @@ sofithcheallaigh@gmail.com or o\_fithcheallaigh-s@ulster.ac.uk}
 \maketitle
 
 \begin{abstract}
-This paper presents a literature review on Federated Learning (FL). \\
+This paper presents a literature review on Federated Learning (FL).
+
 \noindent These notes are for personal use.
 \end{abstract}
 
@@ -43,7 +40,7 @@ Federated learning is a relatively new topic in the field of artificial intellig
 
 Federated learning (FL) is a topic that entails the training statistical models for remote devices or data centres. A good example of a remote device is a mobile phone - there are a wide range of mobile phone hardware configurations available and they cover a massive network. From this simple example, we can see that training remote devices in a FL setting means that the heterogeneous nature of the hardware as well as a potentially wide geographical area are just some of the challenges which must be overcome, and will require a radical change from the traditional approach to implementing machine learning models \cite{b2}.
 
-It behoves us to consider, at the outset, some more challenges which will need to be overcome when considering a FL system. \textbf{Data privacy and data security} are always a paramount concern in any system. The architecture of a FL system means that the collected by the remote device will stay on that device, which reduces the risk of data breaches, however, the concerns of data privacy are not completely removed, and as such there is a need to implement schemes to further ensure any data is secure. Since FL involves frequent communication between the central server and the remote devices, another concern is \textbf{communication and bandwidth}. Communication overhead can be a substantial part of the battery life for a resource constrained device. So the need to optimise the communication protocols are is critical to the implementation of a useful FL network. As mentioned above, \textbf{heterogeneous hardware} will require the development of models that can allow for this heterogeneous nature is very important. Depending on the nature of the system, \textbf{data heterogeneity}, where different end devices are collecting different types of data will cause problems for 
+It behoves us to consider, at the outset, some more challenges which will need to be overcome when considering a FL system. \textbf{Data privacy and data security} are always a paramount concern in any system. The architecture of a FL system means that the collected by the remote device will stay on that device, which reduces the risk of data breaches, however, the concerns of data privacy are not completely removed, and as such there is a need to implement schemes to further ensure any data is secure. Since FL involves frequent communication between the central server and the remote devices, another concern is \textbf{communication and bandwidth}. Communication overhead can be a substantial part of the battery life for a resource constrained device. So the need to optimise the communication protocols are is critical to the implementation of a useful FL network. As mentioned above, \textbf{heterogeneous hardware} will require the development of models that can allow for this heterogeneous nature is very important. Depending on the nature of the system, \textbf{data heterogeneity}, where different end devices are collecting different types of data, has the potential to cause problems for the models being implemented, so it is critical to develop a model that will not be hindered by the various types of data, and will allow convergence. Another large challenge is \textbf{model aggregation and model updates}, which involves combining updates from multiple devices. This will require a strategy that will maintain the model's performance and accuracy. Creating this balance between local, on-device learning, and global learning will be extremely important. Associated with this is the need for designing a plan for \textbf{strategy for device participation}. By this we mean, designing a plan to select which devices will take part in each round of training, while preventing others, or preventing devices from dominating the training process. Another potential problem could be \textbf{model overfitting}. This can be a problem because due to the very local nature of the data, there is the potential of overfitting to the noise in that data. 
 
 
 % \section*{References}
