@@ -43,9 +43,17 @@ Generally, it can be said that the development of federated learning differs sig
 This paper aims to present more detail on federated learning by looking at the current state of the art. There will also be a more detailed examination of the challenges faced when trying to develop an efficient and robust system, as well as examining the future directions for federated learning. 
 
 \section{What has gone before}
-The federated learning idea has gained ground in industry because it offers several advantages over traditional machine learning approaches. The concept of FL was first proposed by H. Brendan McMahon et al. at Google \cite{b4}. 
+The federated learning idea has gained ground in industry because it offers several advantages over traditional machine learning approaches. The concept of FL was first proposed by H. Brendan McMahon et al. at Google. This work discusses the ideal types of problems for federated learning. The authors say that the potential problems should have the following properties \cite{b4}:
+\begin{itemize}
+    \item Training on real-world data from mobile devices provides a distinct advantage over using representative data typically available at a data centre.
+    \item The data required is sensitive to privacy issues or is very large, making accessing it via a data centre not the preferred method
+    \item For supervised tasks, labels on the data can be inferred naturally from user interactions
+\end{itemize}
 
-First, as has been discussed above, there is the ability to allow organisations to train machine learning models on data that cannot be shared because of privacy concerns. Examples would be healthcare data or financial data. Second, FL also allows developers and organisations to use data from multiple sources to improve the accuracy of their models, and third, FL will enable companies to reduce the cost and complexity of storing and managing large amounts of data \cite{b3}.
+An often-cited example of a good FL problem is predicting the next word when writing a message on a mobile phone, which falls under the heading of language models. The dataset associated with this problem will likely contain personal messages sent to friends and family, information on a person's financial affairs, information on websites visited, and passwords entered into the device. The dataset would also be massive in scale, with the Google Play Store listing the GBoard application as having been downloaded more than 5 billion times \footnote{https://play.google.com/store/search?q=GBoard\&c=apps} When considering this dataset, three things are apparent. First, this is not the type of dataset that could be easily represented with a proxy dataset \footnote{How a person uses language in information communications is generally different to the language one would get in standard language corpora.}; second, the data is of such a private nature that it would be very likely the owner of the data would not want it to be transmitted from the device to a central server to be used in further training of a global model; third, the text entered into the device is self-labelled for leaning in a language model.
+
+% First, as has been discussed above, there is the ability to allow organisations to train machine learning models on data that cannot be shared because of privacy concerns. Examples would be healthcare data or financial data. Second, FL also allows developers and organisations to use data from multiple sources to improve the accuracy of their models, and third, FL will enable companies to reduce the cost and complexity of storing and managing large amounts of data \cite{b3}.
+
 
 FL has been used in companies like Microsoft, Google and Apple. Good has used FL to improve the performance of their keyboard application Gboard
 
